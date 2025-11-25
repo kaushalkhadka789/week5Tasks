@@ -25,6 +25,18 @@ namespace OOPWorkshop
             p.Print("Hello I am Messi");
             p.Print(10);
             p.Print("Repeat", 3);
+
+            //Task 3(b)
+
+            Teacher nepali = new NepaliTeacher { Name = "Ram" };
+            Teacher english = new EnglishTeacher { Name = "Kaushal" };
+
+            nepali.Teaching();
+            nepali.SalaryInfo();
+
+            english.Teaching();
+            english.SalaryInfo();
+
         }
     }
 }
