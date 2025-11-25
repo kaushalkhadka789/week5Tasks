@@ -37,6 +37,16 @@ namespace OOPWorkshop
             english.Teaching();
             english.SalaryInfo();
 
+            Console.WriteLine("\n=== TASK 4: Abstraction ===");
+            Vehicle car2 = new CarV();
+            Vehicle bike2 = new BikeV();
+            car2.Display();
+            car2.StartEngine();
+            car2.StopEngine();
+            bike2.Display();
+            bike2.StartEngine();
+            bike2.StopEngine();
+
         }
     }
 }
