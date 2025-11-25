@@ -19,6 +19,12 @@ namespace OOPWorkshop
             Motorcycle moto = new Motorcycle { Brand = "Yamaha", Speed = 90, HasCarrier = true };
             car.Start(); car.DisplayInfo(); car.Stop();
             moto.Start(); moto.DisplayInfo(); moto.Stop();
+
+            Console.WriteLine("\n=== TASK 3: Polymorphism (Overloading) ===");
+            Printer p = new Printer();
+            p.Print("Hello I am Messi");
+            p.Print(10);
+            p.Print("Repeat", 3);
         }
     }
 }
