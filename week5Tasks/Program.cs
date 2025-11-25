@@ -47,6 +47,17 @@ namespace OOPWorkshop
             bike2.StartEngine();
             bike2.StopEngine();
 
+            Console.WriteLine("\n=== TASK 5: OOP Project ===");
+            ElectronicsStore store = new ElectronicsStore();
+
+            Laptop laptop = new Laptop("Dell", 120000);
+            Smartphone phone = new Smartphone("Samsung", 90000);
+
+            store.AddDevice(laptop);
+            store.AddDevice(phone);
+
+            store.ShowAllDeviceDetails();
+
         }
     }
 }
