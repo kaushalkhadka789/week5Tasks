@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.ConstrainedExecution;
 
 namespace OOPWorkshop
 {
@@ -12,6 +13,12 @@ namespace OOPWorkshop
             acc.Deposit(200);
             acc.Withdraw(100);
             Console.WriteLine("Final Balance: " + acc.Balance);
+
+            Console.WriteLine("\n=== TASK 2: Inheritance ===");
+            Car car = new Car { Brand = "Toyota", Speed = 120, Seats = 5 };
+            Motorcycle moto = new Motorcycle { Brand = "Yamaha", Speed = 90, HasCarrier = true };
+            car.Start(); car.DisplayInfo(); car.Stop();
+            moto.Start(); moto.DisplayInfo(); moto.Stop();
         }
     }
 }
